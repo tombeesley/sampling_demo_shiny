@@ -16,9 +16,9 @@ server <- function(input, output) {
     rnorm(input$num)
   })
 
-  output$hist <- renderPlot({
-    hist(data())
-  })
+  # output$hist <- renderPlot({
+  #   hist(data())
+  # })
   output$stats <- renderPrint({
     summary(data())
   })
